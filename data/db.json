@@ -1,0 +1,558 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Carlos Gómez",
+      "username": "cgomez",
+      "email": "[carlos@example.com](mailto:carlos@example.com)",
+      "phone": "+54 11 5555 4444",
+      "status": "active",
+      "createdAt": "2025-01-12T12:30:00",
+      "lastBetAt": "2025-01-23T15:10:00",
+      "balance": 1200,
+      "betsCount": 34,
+      "betsWon": 12,
+      "betsLost": 22
+    },
+    {
+      "id": 2,
+      "name": "Laura Pérez",
+      "username": "lperez",
+      "email": "[laura@example.com](mailto:laura@example.com)",
+      "phone": "+54 11 4555 2887",
+      "status": "suspended",
+      "createdAt": "2025-01-08T09:10:00",
+      "lastBetAt": "2025-01-19T16:40:00",
+      "balance": 500,
+      "betsCount": 14,
+      "betsWon": 6,
+      "betsLost": 8
+    },
+    {
+      "id": 3,
+      "name": "Mariana Torres",
+      "username": "mtorres",
+      "email": "[mariana@example.com](mailto:mariana@example.com)",
+      "phone": "+54 11 5123 1188",
+      "status": "active",
+      "createdAt": "2025-01-05T10:25:00",
+      "lastBetAt": "2025-01-24T11:00:00",
+      "balance": 950,
+      "betsCount": 22,
+      "betsWon": 10,
+      "betsLost": 12
+    },
+    {
+      "id": 4,
+      "name": "Sergio Duarte",
+      "username": "sduarte",
+      "email": "[sergio@example.com](mailto:sergio@example.com)",
+      "phone": "+54 11 4332 3388",
+      "status": "banned",
+      "createdAt": "2024-12-20T14:30:00",
+      "lastBetAt": "2025-01-11T17:50:00",
+      "balance": 0,
+      "betsCount": 40,
+      "betsWon": 5,
+      "betsLost": 35
+    },
+    {
+      "id": 5,
+      "name": "Vanesa León",
+      "username": "vleon",
+      "email": "[vanesa@example.com](mailto:vanesa@example.com)",
+      "phone": "+54 11 4000 9988",
+      "status": "active",
+      "createdAt": "2025-01-14T12:00:00",
+      "lastBetAt": "2025-01-23T18:10:00",
+      "balance": 1780,
+      "betsCount": 50,
+      "betsWon": 28,
+      "betsLost": 22
+    },
+    {
+      "id": 6,
+      "name": "Ricardo Salinas",
+      "username": "rsalinas",
+      "email": "[ricardo@example.com](mailto:ricardo@example.com)",
+      "phone": "+54 11 4688 2210",
+      "status": "active",
+      "createdAt": "2025-01-11T19:10:00",
+      "lastBetAt": "2025-01-21T21:05:00",
+      "balance": 640,
+      "betsCount": 15,
+      "betsWon": 6,
+      "betsLost": 9
+    },
+    {
+      "id": 7,
+      "name": "Marcelo Iglesias",
+      "username": "miglesias",
+      "email": "[marcelo@example.com](mailto:marcelo@example.com)",
+      "phone": "+54 11 4552 1100",
+      "status": "active",
+      "createdAt": "2025-01-03T12:30:00",
+      "lastBetAt": "2025-01-25T13:10:00",
+      "balance": 90,
+      "betsCount": 8,
+      "betsWon": 1,
+      "betsLost": 7
+    },
+    {
+      "id": 8,
+      "name": "Cecilia Méndez",
+      "username": "cmendez",
+      "email": "[cecilia@example.com](mailto:cecilia@example.com)",
+      "phone": "+54 11 4789 3333",
+      "status": "active",
+      "createdAt": "2025-01-07T09:50:00",
+      "lastBetAt": "2025-01-24T19:30:00",
+      "balance": 825,
+      "betsCount": 19,
+      "betsWon": 9,
+      "betsLost": 10
+    },
+    {
+      "id": 9,
+      "name": "Oscar Medina",
+      "username": "omedina",
+      "email": "[oscar@example.com](mailto:oscar@example.com)",
+      "phone": "+54 11 5010 7788",
+      "status": "suspended",
+      "createdAt": "2025-01-10T13:30:00",
+      "lastBetAt": "2025-01-20T20:55:00",
+      "balance": 120,
+      "betsCount": 12,
+      "betsWon": 4,
+      "betsLost": 8
+    },
+    {
+      "id": 10,
+      "name": "Daniela Costa",
+      "username": "dcosta",
+      "email": "[daniela@example.com](mailto:daniela@example.com)",
+      "phone": "+54 11 4111 4578",
+      "status": "active",
+      "createdAt": "2025-01-02T11:00:00",
+      "lastBetAt": "2025-01-25T14:20:00",
+      "balance": 2100,
+      "betsCount": 55,
+      "betsWon": 32,
+      "betsLost": 23
+    },
+    {
+      "id": 11,
+      "name": "Luis Rodríguez",
+      "username": "lrodriguez",
+      "email": "[luis@example.com](mailto:luis@example.com)",
+      "phone": "+54 11 5666 4455",
+      "status": "active",
+      "createdAt": "2024-12-29T08:50:00",
+      "lastBetAt": "2025-01-24T10:30:00",
+      "balance": 430,
+      "betsCount": 18,
+      "betsWon": 7,
+      "betsLost": 11
+    },
+    {
+      "id": 12,
+      "name": "Eduardo Pérez",
+      "username": "eperez",
+      "email": "[eduardo@example.com](mailto:eduardo@example.com)",
+      "phone": "+54 11 4433 7772",
+      "status": "banned",
+      "createdAt": "2024-12-15T17:40:00",
+      "lastBetAt": "2025-01-16T18:10:00",
+      "balance": 0,
+      "betsCount": 27,
+      "betsWon": 3,
+      "betsLost": 24
+    },
+    {
+      "id": 13,
+      "name": "Julián Herrera",
+      "username": "jherrera",
+      "email": "[julian@example.com](mailto:julian@example.com)",
+      "phone": "+54 11 3988 5757",
+      "status": "active",
+      "createdAt": "2025-01-06T16:20:00",
+      "lastBetAt": "2025-01-25T13:10:00",
+      "balance": 1680,
+      "betsCount": 44,
+      "betsWon": 26,
+      "betsLost": 18
+    },
+    {
+      "id": 14,
+      "name": "Nadia Benítez",
+      "username": "nbenitez",
+      "email": "[nadia@example.com](mailto:nadia@example.com)",
+      "phone": "+54 11 3009 1287",
+      "status": "active",
+      "createdAt": "2025-01-04T10:00:00",
+      "lastBetAt": "2025-01-23T18:30:00",
+      "balance": 780,
+      "betsCount": 23,
+      "betsWon": 10,
+      "betsLost": 13
+    },
+    {
+      "id": 15,
+      "name": "Pedro Sánchez",
+      "username": "psanchez",
+      "email": "[pedro@example.com](mailto:pedro@example.com)",
+      "phone": "+54 11 5222 6677",
+      "status": "active",
+      "createdAt": "2025-01-09T12:30:00",
+      "lastBetAt": "2025-01-25T15:40:00",
+      "balance": 340,
+      "betsCount": 9,
+      "betsWon": 4,
+      "betsLost": 5
+    }
+  ],
+  "bets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "amount": 200,
+      "status": "win",
+      "createdAt": "2025-01-22T15:10:00",
+      "match": "Boca vs River",
+      "odds": 2.1,
+      "payout": 420
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "amount": 150,
+      "status": "lost",
+      "createdAt": "2025-01-20T18:40:00",
+      "match": "Racing vs Independiente",
+      "odds": 1.9,
+      "payout": 0
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "amount": 100,
+      "status": "win",
+      "createdAt": "2025-01-17T14:00:00",
+      "match": "Barcelona vs Real Madrid",
+      "odds": 3.2,
+      "payout": 320
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "amount": 200,
+      "status": "lost",
+      "createdAt": "2025-01-19T12:50:00",
+      "match": "Peñarol vs Nacional",
+      "odds": 2.0,
+      "payout": 0
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "amount": 50,
+      "status": "pending",
+      "createdAt": "2025-01-24T10:00:00",
+      "match": "Juventus vs Milan",
+      "odds": 1.7,
+      "payout": null
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "amount": 300,
+      "status": "win",
+      "createdAt": "2025-01-21T09:30:00",
+      "match": "Arsenal vs Chelsea",
+      "odds": 2.5,
+      "payout": 750
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "amount": 180,
+      "status": "lost",
+      "createdAt": "2025-01-18T13:15:00",
+      "match": "Inter vs Roma",
+      "odds": 2.2,
+      "payout": 0
+    },
+    {
+      "id": 8,
+      "userId": 5,
+      "amount": 90,
+      "status": "win",
+      "createdAt": "2025-01-23T18:20:00",
+      "match": "Colón vs Unión",
+      "odds": 1.9,
+      "payout": 171
+    },
+    {
+      "id": 9,
+      "userId": 5,
+      "amount": 250,
+      "status": "lost",
+      "createdAt": "2025-01-16T11:00:00",
+      "match": "San Lorenzo vs Huracán",
+      "odds": 1.8,
+      "payout": 0
+    },
+    {
+      "id": 10,
+      "userId": 6,
+      "amount": 140,
+      "status": "pending",
+      "createdAt": "2025-01-24T09:00:00",
+      "match": "Manchester City vs Liverpool",
+      "odds": 2.0,
+      "payout": null
+    },
+    {
+      "id": 11,
+      "userId": 7,
+      "amount": 500,
+      "status": "lost",
+      "createdAt": "2025-01-23T13:30:00",
+      "match": "Juventus vs Lazio",
+      "odds": 3.0,
+      "payout": 0
+    },
+    {
+      "id": 12,
+      "userId": 7,
+      "amount": 120,
+      "status": "win",
+      "createdAt": "2025-01-21T17:00:00",
+      "match": "PSG vs Marsella",
+      "odds": 1.6,
+      "payout": 192
+    },
+    {
+      "id": 13,
+      "userId": 8,
+      "amount": 80,
+      "status": "win",
+      "createdAt": "2025-01-20T14:40:00",
+      "match": "Chivas vs América",
+      "odds": 2.8,
+      "payout": 224
+    },
+    {
+      "id": 14,
+      "userId": 8,
+      "amount": 200,
+      "status": "lost",
+      "createdAt": "2025-01-19T10:20:00",
+      "match": "Tigre vs Lanús",
+      "odds": 1.7,
+      "payout": 0
+    },
+    {
+      "id": 15,
+      "userId": 9,
+      "amount": 100,
+      "status": "pending",
+      "createdAt": "2025-01-24T12:30:00",
+      "match": "Borussia Dortmund vs Bayern",
+      "odds": 2.5,
+      "payout": null
+    },
+    {
+      "id": 16,
+      "userId": 10,
+      "amount": 300,
+      "status": "win",
+      "createdAt": "2025-01-18T18:00:00",
+      "match": "Newell's vs Central",
+      "odds": 3.1,
+      "payout": 930
+    },
+    {
+      "id": 17,
+      "userId": 10,
+      "amount": 180,
+      "status": "lost",
+      "createdAt": "2025-01-16T13:50:00",
+      "match": "Belgrano vs Instituto",
+      "odds": 1.9,
+      "payout": 0
+    },
+    {
+      "id": 18,
+      "userId": 11,
+      "amount": 250,
+      "status": "win",
+      "createdAt": "2025-01-22T11:40:00",
+      "match": "Emelec vs Barcelona SC",
+      "odds": 2.4,
+      "payout": 600
+    },
+    {
+      "id": 19,
+      "userId": 12,
+      "amount": 100,
+      "status": "lost",
+      "createdAt": "2025-01-21T09:10:00",
+      "match": "Boca vs Racing",
+      "odds": 2.7,
+      "payout": 0
+    },
+    {
+      "id": 20,
+      "userId": 13,
+      "amount": 75,
+      "status": "win",
+      "createdAt": "2025-01-20T15:20:00",
+      "match": "Estudiantes vs Gimnasia",
+      "odds": 1.8,
+      "payout": 135
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "deposit",
+      "amount": 500,
+      "createdAt": "2025-01-20T13:00:00"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "type": "withdraw",
+      "amount": 200,
+      "createdAt": "2025-01-22T10:30:00"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "type": "deposit",
+      "amount": 300,
+      "createdAt": "2025-01-23T14:50:00"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "type": "deposit",
+      "amount": 400,
+      "createdAt": "2025-01-17T16:00:00"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "type": "withdraw",
+      "amount": 100,
+      "createdAt": "2025-01-20T10:20:00"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "type": "deposit",
+      "amount": 250,
+      "createdAt": "2025-01-21T09:40:00"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "type": "deposit",
+      "amount": 100,
+      "createdAt": "2025-01-23T12:20:00"
+    },
+    {
+      "id": 8,
+      "userId": 4,
+      "type": "deposit",
+      "amount": 600,
+      "createdAt": "2025-01-18T14:10:00"
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "type": "withdraw",
+      "amount": 150,
+      "createdAt": "2025-01-21T15:30:00"
+    },
+    {
+      "id": 10,
+      "userId": 5,
+      "type": "deposit",
+      "amount": 800,
+      "createdAt": "2025-01-19T11:20:00"
+    },
+    {
+      "id": 11,
+      "userId": 5,
+      "type": "withdraw",
+      "amount": 200,
+      "createdAt": "2025-01-22T17:40:00"
+    },
+    {
+      "id": 12,
+      "userId": 6,
+      "type": "deposit",
+      "amount": 300,
+      "createdAt": "2025-01-23T09:00:00"
+    },
+    {
+      "id": 13,
+      "userId": 7,
+      "type": "deposit",
+      "amount": 500,
+      "createdAt": "2025-01-20T18:30:00"
+    },
+    {
+      "id": 14,
+      "userId": 7,
+      "type": "withdraw",
+      "amount": 100,
+      "createdAt": "2025-01-22T13:00:00"
+    },
+    {
+      "id": 15,
+      "userId": 8,
+      "type": "deposit",
+      "amount": 350,
+      "createdAt": "2025-01-19T12:45:00"
+    },
+    {
+      "id": 16,
+      "userId": 8,
+      "type": "withdraw",
+      "amount": 120,
+      "createdAt": "2025-01-21T14:25:00"
+    },
+    {
+      "id": 17,
+      "userId": 9,
+      "type": "deposit",
+      "amount": 200,
+      "createdAt": "2025-01-23T09:10:00"
+    },
+    {
+      "id": 18,
+      "userId": 10,
+      "type": "deposit",
+      "amount": 900,
+      "createdAt": "2025-01-18T10:50:00"
+    },
+    {
+      "id": 19,
+      "userId": 10,
+      "type": "withdraw",
+      "amount": 300,
+      "createdAt": "2025-01-21T09:10:00"
+    },
+    {
+      "id": 20,
+      "userId": 11,
+      "type": "deposit",
+      "amount": 700,
+      "createdAt": "2025-01-22T11:40:00"
+    }
+  ]
+}
