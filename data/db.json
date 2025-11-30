@@ -213,7 +213,7 @@
   ],
   "bets": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "amount": 200,
       "status": "win",
@@ -223,7 +223,7 @@
       "payout": 420
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "amount": 150,
       "status": "lost",
@@ -233,7 +233,7 @@
       "payout": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 2,
       "amount": 100,
       "status": "win",
@@ -243,17 +243,17 @@
       "payout": 320
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 2,
       "amount": 200,
       "status": "lost",
       "createdAt": "2025-01-19T12:50:00",
       "match": "Peñarol vs Nacional",
-      "odds": 2.0,
+      "odds": 2,
       "payout": 0
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 3,
       "amount": 50,
       "status": "pending",
@@ -263,7 +263,7 @@
       "payout": null
     },
     {
-      "id": 6,
+      "id": "6",
       "userId": 4,
       "amount": 300,
       "status": "win",
@@ -273,7 +273,7 @@
       "payout": 750
     },
     {
-      "id": 7,
+      "id": "7",
       "userId": 4,
       "amount": 180,
       "status": "lost",
@@ -283,7 +283,7 @@
       "payout": 0
     },
     {
-      "id": 8,
+      "id": "8",
       "userId": 5,
       "amount": 90,
       "status": "win",
@@ -293,7 +293,7 @@
       "payout": 171
     },
     {
-      "id": 9,
+      "id": "9",
       "userId": 5,
       "amount": 250,
       "status": "lost",
@@ -303,27 +303,27 @@
       "payout": 0
     },
     {
-      "id": 10,
+      "id": "10",
       "userId": 6,
       "amount": 140,
       "status": "pending",
       "createdAt": "2025-01-24T09:00:00",
       "match": "Manchester City vs Liverpool",
-      "odds": 2.0,
+      "odds": 2,
       "payout": null
     },
     {
-      "id": 11,
+      "id": "11",
       "userId": 7,
       "amount": 500,
       "status": "lost",
       "createdAt": "2025-01-23T13:30:00",
       "match": "Juventus vs Lazio",
-      "odds": 3.0,
+      "odds": 3,
       "payout": 0
     },
     {
-      "id": 12,
+      "id": "12",
       "userId": 7,
       "amount": 120,
       "status": "win",
@@ -333,7 +333,7 @@
       "payout": 192
     },
     {
-      "id": 13,
+      "id": "13",
       "userId": 8,
       "amount": 80,
       "status": "win",
@@ -343,7 +343,7 @@
       "payout": 224
     },
     {
-      "id": 14,
+      "id": "14",
       "userId": 8,
       "amount": 200,
       "status": "lost",
@@ -353,7 +353,7 @@
       "payout": 0
     },
     {
-      "id": 15,
+      "id": "15",
       "userId": 9,
       "amount": 100,
       "status": "pending",
@@ -363,7 +363,7 @@
       "payout": null
     },
     {
-      "id": 16,
+      "id": "16",
       "userId": 10,
       "amount": 300,
       "status": "win",
@@ -373,7 +373,7 @@
       "payout": 930
     },
     {
-      "id": 17,
+      "id": "17",
       "userId": 10,
       "amount": 180,
       "status": "lost",
@@ -383,7 +383,7 @@
       "payout": 0
     },
     {
-      "id": 18,
+      "id": "18",
       "userId": 11,
       "amount": 250,
       "status": "win",
@@ -393,7 +393,7 @@
       "payout": 600
     },
     {
-      "id": 19,
+      "id": "19",
       "userId": 12,
       "amount": 100,
       "status": "lost",
@@ -403,7 +403,7 @@
       "payout": 0
     },
     {
-      "id": 20,
+      "id": "20",
       "userId": 13,
       "amount": 75,
       "status": "win",
@@ -415,140 +415,140 @@
   ],
   "transactions": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "type": "deposit",
       "amount": 500,
       "createdAt": "2025-01-20T13:00:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "type": "withdraw",
       "amount": 200,
       "createdAt": "2025-01-22T10:30:00"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "type": "deposit",
       "amount": 300,
       "createdAt": "2025-01-23T14:50:00"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 2,
       "type": "deposit",
       "amount": 400,
       "createdAt": "2025-01-17T16:00:00"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 2,
       "type": "withdraw",
       "amount": 100,
       "createdAt": "2025-01-20T10:20:00"
     },
     {
-      "id": 6,
+      "id": "6",
       "userId": 3,
       "type": "deposit",
       "amount": 250,
       "createdAt": "2025-01-21T09:40:00"
     },
     {
-      "id": 7,
+      "id": "7",
       "userId": 3,
       "type": "deposit",
       "amount": 100,
       "createdAt": "2025-01-23T12:20:00"
     },
     {
-      "id": 8,
+      "id": "8",
       "userId": 4,
       "type": "deposit",
       "amount": 600,
       "createdAt": "2025-01-18T14:10:00"
     },
     {
-      "id": 9,
+      "id": "9",
       "userId": 4,
       "type": "withdraw",
       "amount": 150,
       "createdAt": "2025-01-21T15:30:00"
     },
     {
-      "id": 10,
+      "id": "10",
       "userId": 5,
       "type": "deposit",
       "amount": 800,
       "createdAt": "2025-01-19T11:20:00"
     },
     {
-      "id": 11,
+      "id": "11",
       "userId": 5,
       "type": "withdraw",
       "amount": 200,
       "createdAt": "2025-01-22T17:40:00"
     },
     {
-      "id": 12,
+      "id": "12",
       "userId": 6,
       "type": "deposit",
       "amount": 300,
       "createdAt": "2025-01-23T09:00:00"
     },
     {
-      "id": 13,
+      "id": "13",
       "userId": 7,
       "type": "deposit",
       "amount": 500,
       "createdAt": "2025-01-20T18:30:00"
     },
     {
-      "id": 14,
+      "id": "14",
       "userId": 7,
       "type": "withdraw",
       "amount": 100,
       "createdAt": "2025-01-22T13:00:00"
     },
     {
-      "id": 15,
+      "id": "15",
       "userId": 8,
       "type": "deposit",
       "amount": 350,
       "createdAt": "2025-01-19T12:45:00"
     },
     {
-      "id": 16,
+      "id": "16",
       "userId": 8,
       "type": "withdraw",
       "amount": 120,
       "createdAt": "2025-01-21T14:25:00"
     },
     {
-      "id": 17,
+      "id": "17",
       "userId": 9,
       "type": "deposit",
       "amount": 200,
       "createdAt": "2025-01-23T09:10:00"
     },
     {
-      "id": 18,
+      "id": "18",
       "userId": 10,
       "type": "deposit",
       "amount": 900,
       "createdAt": "2025-01-18T10:50:00"
     },
     {
-      "id": 19,
+      "id": "19",
       "userId": 10,
       "type": "withdraw",
       "amount": 300,
       "createdAt": "2025-01-21T09:10:00"
     },
     {
-      "id": 20,
+      "id": "20",
       "userId": 11,
       "type": "deposit",
       "amount": 700,

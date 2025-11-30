@@ -1,7 +1,8 @@
 import "./App.css";
-import AllData from "./components/usersData";
-import BetsData from "./components/betsData";
-import BestPlayers from './components/bestPlayer'
+import AllData from "./components/UsersData";
+import BetsData from "./components/BetsData";
+import BestPlayers from './components/BestPlayer'
+import NewUser from "./components/NewUser";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AllData />
       <BetsData />
       <BestPlayers/>
+      <NewUser />
     </>
   );
 }
