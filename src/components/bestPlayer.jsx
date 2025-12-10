@@ -15,7 +15,7 @@ export default function BestPlayers() {
           (a, b) =>
             (b.betsWon / b.betsCount) * 100 - (a.betsWon / a.betsCount) * 100
         );
-        
+
         setBestPlayers(orderedPlayers.slice(0, 5));
       } catch (err) {
         console.error(err);
@@ -26,10 +26,9 @@ export default function BestPlayers() {
 
   return (
     <ul>
-      <h2>TOP 5 Players</h2>
       {bestPlayers.map((player, index) => (
         <li key={player.id}>
-          top {index + 1}: {player.name} - %
+          top {index + 1}: {player.name} - WR %
           {((player.betsWon / player.betsCount) * 100).toFixed(0)}
         </li>
       ))}

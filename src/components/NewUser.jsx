@@ -1,45 +1,47 @@
 import React, { useState } from "react";
 
-const NewUser = () => {
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+const NewUser = ({ addUser }) => {
+  const [form, setForm] = useState({
+    name: "",
+    username: "",
+    email: "",
+    phone: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const user = {
+      ...form,
+      status: "active",
+      createdAt: new Date().toISOString().slice(0, -5),
+      lastBetAt: null,
+      balance: 0,
+      betsCount: 0,
+      betsWon: 0,
+      betsLost: 0,
+    };
+
     try {
-      const res = await fetch("http://localhost:3000/users");
-      const users = await res.json();
-
-      const newId =
-        users.length > 0 ? Math.max(...users.map((u) => u.id)) + 1 : 1;
-
-      const user = {
-        id: newId,
-        name,
-        username,
-        email,
-        phone,
-        status: "active",
-        createdAt: new Date().toISOString().slice(0, -5),
-        lastBetAt: null,
-        balance: 0,
-        betsCount: 0,
-        betsWon: 0,
-        betsLost: 0,
-      };
-
-      fetch("http://localhost:3000/users", {
+      const res = await fetch("http://localhost:3000/users", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
       });
 
-      setName("");
-      setUsername("");
-      setEmail("");
-      setPhone("");
+      const userFromServer = await res.json();
+
+      setForm({ name: "", username: "", email: "", phone: "" });
+
+      addUser(userFromServer);
+
     } catch (error) {
       console.error(error);
     }
@@ -47,15 +49,14 @@ const NewUser = () => {
 
   return (
     <>
-      <h2>Add User</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name </label>
         <input
           type="text"
-          id="name"
+          name="name"
           placeholder="ingrese su nombre"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
+          onChange={handleChange}
+          value={form.name}
           required
         />
         <br />
@@ -63,10 +64,10 @@ const NewUser = () => {
         <label htmlFor="username">username </label>
         <input
           type="text"
-          id="username"
+          name="username"
           placeholder="ingrese su usuario"
-          onChange={(e) => setUsername(e.target.value)}
-          value={username}
+          onChange={handleChange}
+          value={form.username}
           required
         />
         <br />
@@ -74,10 +75,10 @@ const NewUser = () => {
         <label htmlFor="email">email </label>
         <input
           type="text"
-          id="email"
+          name="email"
           placeholder="ingrese su email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
+          onChange={handleChange}
+          value={form.email}
           required
         />
         <br />
@@ -85,10 +86,10 @@ const NewUser = () => {
         <label htmlFor="phone">phone </label>
         <input
           type="text"
-          id="phone"
+          name="phone"
           placeholder="ingrese su numero"
-          onChange={(e) => setPhone(e.target.value)}
-          value={phone}
+          onChange={handleChange}
+          value={form.phone}
           required
         />
         <br />
