@@ -41,7 +41,6 @@ const NewUser = ({ addUser }) => {
       setForm({ name: "", username: "", email: "", phone: "" });
 
       addUser(userFromServer);
-
     } catch (error) {
       console.error(error);
     }
@@ -49,52 +48,58 @@ const NewUser = ({ addUser }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name </label>
-        <input
-          type="text"
-          name="name"
-          placeholder="ingrese su nombre"
-          onChange={handleChange}
-          value={form.name}
-          required
-        />
-        <br />
+      <form onSubmit={handleSubmit} className="newuser">
+        <div className="user-input">
+          <label htmlFor="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="ingrese su nombre"
+            onChange={handleChange}
+            value={form.name}
+            required
+          />
+        </div>
 
-        <label htmlFor="username">username </label>
-        <input
-          type="text"
-          name="username"
-          placeholder="ingrese su usuario"
-          onChange={handleChange}
-          value={form.username}
-          required
-        />
-        <br />
+        <div className="user-input">
+          <label htmlFor="username">username: </label>
+          <input
+            type="text"
+            name="username"
+            placeholder="ingrese su usuario"
+            onChange={handleChange}
+            value={form.username}
+            required
+          />
+        </div>
 
-        <label htmlFor="email">email </label>
-        <input
-          type="text"
-          name="email"
-          placeholder="ingrese su email"
-          onChange={handleChange}
-          value={form.email}
-          required
-        />
-        <br />
+        <div className="user-input">
+          <label htmlFor="email">email: </label>
+          <input
+            type="text"
+            name="email"
+            placeholder="ingrese su email"
+            onChange={handleChange}
+            value={form.email}
+            required
+          />
+        </div>
 
-        <label htmlFor="phone">phone </label>
-        <input
-          type="text"
-          name="phone"
-          placeholder="ingrese su numero"
-          onChange={handleChange}
-          value={form.phone}
-          required
-        />
-        <br />
+        <div className="user-input">
+          <label htmlFor="phone">phone: </label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="ingrese su numero"
+            onChange={handleChange}
+            value={form.phone}
+            required
+          />
+        </div>
 
-        <input type="submit" value="enviar" />
+        <div id="button-add">
+          <input type="submit" value="enviar" />
+        </div>
       </form>
     </>
   );

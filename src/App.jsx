@@ -20,30 +20,28 @@ function App() {
   }, []);
 
   const addUser = (newUser) => {
-    setUsers(prev => [...prev, newUser]);
+    setUsers((prev) => [...prev, newUser]);
   };
 
   return (
     <div id="appStructure">
-      <div className="p-4 bg-gray-500 rounded-md ">
+      <div className="cards">
         <h1>Users & Bets</h1>
-        <hr />
-        <AllData users={users} />
-        <BetsData />
+        <div>
+          <AllData users={users} />
+          <BetsData />
+        </div>
       </div>
-      <div className="p-4 bg-gray-500 rounded-md ">
+      <div className="cards">
         <h2>TOP 5 Players</h2>
-        <hr />
         <BestPlayers />
       </div>
-      <div className="p-4 bg-gray-500 rounded-md">
+      <div className="cards">
         <h2>Add User</h2>
-        <hr />
-        <NewUser addUser={addUser}/>
+        <NewUser addUser={addUser} />
       </div>
-      <div className="p-4 bg-gray-500 rounded-md">
+      <div className="cards">
         <h2>Users List</h2>
-        <hr />
         <AllUsersList users={users} setUsers={setUsers} />
       </div>
     </div>

@@ -27,7 +27,7 @@ export default function BestPlayers() {
   return (
     <ul>
       {bestPlayers.map((player, index) => (
-        <li key={player.id}>
+        <li className="li-sryle" key={player.id}>
           top {index + 1}: {player.name} - WR %
           {((player.betsWon / player.betsCount) * 100).toFixed(0)}
         </li>

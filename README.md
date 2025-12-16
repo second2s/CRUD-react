@@ -1,3 +1,12 @@
-# Hola Maxi :D
+# Users & Bets App
 
-veamos
+React + Vite project
+
+## Features
+- CRUD de usuarios
+- Modal con formulario
+
+## Run locally
+npm install
+npm run dev
+json-server --watch data/db.json --port 3000

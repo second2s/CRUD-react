@@ -19,10 +19,10 @@ export default function AllData({ users }) {
 
   return (
     <>
-      <h3>users: {stats.total}</h3>
-      <h3>users active: {stats.active}</h3>
-      <h3>users suspended: {stats.suspended}</h3>
-      <h3>users banned: {stats.banned}</h3>
+      <h3 className="li-sryle">users: {stats.total}</h3>
+      <h3 className="li-sryle">users active: {stats.active}</h3>
+      <h3 className="li-sryle">users suspended: {stats.suspended}</h3>
+      <h3 className="li-sryle">users banned: {stats.banned}</h3>
     </>
   );
 }

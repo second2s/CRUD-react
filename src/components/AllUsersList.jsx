@@ -47,15 +47,10 @@ const AllUsersList = ({ users, setUsers }) => {
   return (
     <ul>
       {users.map((user) => (
-        <li key={user.id} className="liUsers">
-          {user.name} - id {user.id} - status: {user.status}
+        <li key={user.id} className="liUsers li-sryle">
+          {user.name} - id: {user.id}
           <div>
-            <button
-              className="bg-slate-950 pl-2 pr-2 rounded-md m-1"
-              onClick={() => eliminar(user.id)}
-            >
-              eliminar
-            </button>
+            <button onClick={() => eliminar(user.id)}>eliminar</button>
             <button
               onClick={() => {
                 setSelectedUser(user);
@@ -67,7 +62,6 @@ const AllUsersList = ({ users, setUsers }) => {
                 });
                 openModal();
               }}
-              className="bg-slate-950 pl-2 pr-2 rounded-md m-1"
             >
               editar
             </button>
@@ -77,61 +71,45 @@ const AllUsersList = ({ users, setUsers }) => {
       {isOpen && (
         <div className="overlay" onClick={closeModal}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h2>Editar Usuario </h2>
-            <hr />
-            <form onSubmit={handleSubmit}>
+            <h2 className="modal-header">Editar Usuario </h2>
+            <form className="modal-body" onSubmit={handleSubmit}>
               <label htmlFor="name">Name </label>
               <input
                 type="text"
                 name="name"
                 placeholder={form.name}
                 onChange={handleChange}
-                // value={form.name}
                 required
               />
-              <hr className="pb-5" />
-
               <label htmlFor="username">username </label>
               <input
                 type="text"
                 name="username"
                 placeholder={form.username}
                 onChange={handleChange}
-                // value={form.username}
                 required
               />
-              <hr className="pb-5" />
-
               <label htmlFor="email">email </label>
               <input
                 type="text"
                 name="email"
                 placeholder={form.email}
                 onChange={handleChange}
-                // value={form.email}
                 required
               />
-              <hr className="pb-5" />
-
               <label htmlFor="phone">phone </label>
               <input
                 type="text"
                 name="phone"
                 placeholder={form.phone}
                 onChange={handleChange}
-                // value={form.phone}
                 required
               />
-              <hr className="pb-5" />
-
-              <input
-                type="submit"
-                value="enviar"
-                className="bg-slate-500 pl-2 pr-2 rounded-md m-1 text-white"
-              />
+              <div className="modal-footer">
+                <input type="submit" value="enviar" />
+                <button onClick={closeModal}>Cerrar</button>
+              </div>
             </form>
-
-            <button onClick={closeModal}>Cerrar</button>
           </div>
         </div>
       )}

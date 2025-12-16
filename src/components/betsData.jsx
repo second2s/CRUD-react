@@ -27,8 +27,8 @@ export default function BetsData() {
   }, []);
   return (
     <>
-      <h3>Bets: {stats.betsCount}</h3>
-      <h3>Total bet: ${stats.betsTotal}</h3>
+      <h3 className="li-sryle">Bets: {stats.betsCount}</h3>
+      <h3 className="li-sryle">Total bet: ${stats.betsTotal}</h3>
     </>
   );
 }
